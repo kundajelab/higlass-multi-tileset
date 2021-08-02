@@ -1,0 +1,24 @@
+{
+  "name": "higlass-multi-tileset",
+  "version": "0.1.0",
+  "description": "Multi-tileset data fetcher for HiGlass",
+  "repository": "https://github.com/kundajelab/higlass-multi-tileset",
+  "author": "Arjun Barrett",
+  "license": "MIT",
+  "source": "src/index.js",
+  "main": "./dist/higlass-multi-tileset.js",
+  "exports": "./dist/higlass-multi-tileset.modern.js",
+  "module": "./dist/higlass-multi-tileset.module.js",
+  "unpkg": "./dist/higlass-multi-tileset.umd.js",
+  "jsdelivr": "./dist/higlass-multi-tileset.umd.js",
+  "scripts": {
+    "build": "microbundle -f modern,esm,cjs && microbundle -f umd --external none --no-sourcemap",
+    "prepare": "yarn build"
+  },
+  "dependencies": {
+    "higlass-register": "^0.3.0"
+  },
+  "devDependencies": {
+    "microbundle": "^0.13.3"
+  }
+}
