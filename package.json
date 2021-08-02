@@ -1,6 +1,6 @@
 {
   "name": "higlass-multi-tileset",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Multi-tileset data fetcher for HiGlass",
   "repository": "https://github.com/kundajelab/higlass-multi-tileset",
   "author": "Arjun Barrett",
